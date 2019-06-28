@@ -12,6 +12,7 @@ $(document).ready(function(){
     const year = $('#yearInput').val();
     const complete = month + '/' + day + '/' + year
     const result = new CalculateDay(complete);
+    console.log(result);
     $('.output').text(result.returnResult());
   });
 });
