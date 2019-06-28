@@ -19,13 +19,8 @@ _This webpage will convert any number into robot language. This page will demons
 
 | Behavior | Input | Output |
 | -------- | ----- | ------ |
-|  |  |  |
-|  ||
-|  |  |  |
-| |  |
-|   |  |  |
-|  |  | |
-| |  | | |
+|Displays the day of a given date  |6/29/2019 |Saturday  |
+
 
 ### Languages used
 * HTML

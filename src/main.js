@@ -1,4 +1,4 @@
-import { CalculateDay } from "./weekday-calculator.js";
+import { CalculateDay } from "./solar-calc.js";
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
