@@ -3,17 +3,17 @@ export class CalculateDay {
     this.date = date;
   }
   returnResult() {
-    var today = new Date();
-    console.log(today);
+    var todayDate = new Date();
+    console.log(todayDate);
     var userDate = new Date(this.date);
     console.log(userDate);
-    var age = today.getFullYear() - userDate.getFullYear();
-    var m = today.getMonth() - userDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < userDate.getDate()))
+    var userAge = todayDate.getFullYear() - userDate.getFullYear();
+    var getMonth = todayDate.getMonth() - userDate.getMonth();
+    if (getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate()))
     {
-      age--;
+      userAge--;
     }
-    return age;
+    return userAge
   }
 }
 

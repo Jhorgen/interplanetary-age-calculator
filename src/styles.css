@@ -1,3 +1,12 @@
 body {
-  background-color: grey;
+  background-color: turquoise;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
