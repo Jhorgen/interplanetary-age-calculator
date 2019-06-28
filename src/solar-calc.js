@@ -3,9 +3,9 @@ export class CalculateDay {
     this.date = date;
   }
   returnResult() {
+    const weekDays = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     const userDate = new Date(this.date);
-    var currentYear = userDate.getFullYear();
-    return currentYear;
+    return weekDays[userDate.getDay()]
   }
 }
 
@@ -20,5 +20,5 @@ export class CalculateDay {
 //   ? yearDiff
 //   : yearDiff - 1;
 //   return resultDate
-//
+
 // }
