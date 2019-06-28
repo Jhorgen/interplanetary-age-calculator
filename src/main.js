@@ -10,10 +10,10 @@ $(document).ready(function(){
     const month = $('#monthInput').val();
     const day = $('#dayInput').val();
     const year = $('#yearInput').val();
-    var value = $("#selectPlanet[type='select']:checked").val();
-    console.log(value);
+    var planet = $( "#selectPlanet option:selected" ).val();
+    console.log(planet);
     const complete = month + '/' + day + '/' + year
-    const result = new CalculateDay(complete);
+    const result = new CalculateDay(complete, planet);
     console.log(result);
     $('.output').text(result.returnResult());
   });

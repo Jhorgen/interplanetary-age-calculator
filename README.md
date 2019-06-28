@@ -17,8 +17,9 @@ This webpage will...Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
 | Behavior | Input | Output |
 | -------- | ----- | ------ |
 |*test* Displays the day of a given date  |6/29/2019 |Saturday  |
-|Outputs age based on inputted date | 5/9/1992 | 27 |
-
+|Returns age based on given date | 5/9/1992 | 27 |
+|Returns age in "Mercury" years| 5/9/1992 |112|
+|
 
 ### _Languages, frameworks, libraries, etc!_
 

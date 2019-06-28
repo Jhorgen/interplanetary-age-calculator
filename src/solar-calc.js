@@ -1,30 +1,22 @@
 export class CalculateDay {
-  constructor(date) {
+  constructor(date, planet) {
     this.date = date;
+    this.planet = planet;
+    console.log(planet);
   }
+
   returnResult() {
-    var todayDate = new Date();
+    const todayDate = new Date();
     console.log(todayDate);
-    var userDate = new Date(this.date);
+    const userDate = new Date(this.date);
     console.log(userDate);
-    var userAge = todayDate.getFullYear() - userDate.getFullYear();
-    var getMonth = todayDate.getMonth() - userDate.getMonth();
-    if (getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate()))
+    let userAge = todayDate.getFullYear() - userDate.getFullYear();
+    const getMonth = todayDate.getMonth() - userDate.getMonth();
+    const newPlanet = new CalculateDay(this.planet);
+    if (this.planet === "1" && getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate()))
     {
       userAge--;
     }
     return userAge
   }
 }
-
-
-
-
-
-
-
-// returnResult() {
-//   const weekDays = ['Sunday', 'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-//   const userDate = new Date(this.date);
-//   return weekDays[userDate.getDay()]
-// }
