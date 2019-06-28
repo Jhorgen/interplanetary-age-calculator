@@ -1,32 +1,34 @@
-# _
+# _Independent Project 5 : **Galactic age calculator**_
 
-### _Convert numbers into robot language!_
-
-###### By _Josh Horgen, 2019_
+By _Josh Horgen, 2019_
 
 ## _Setup/Installation Requirements_
-#### _Step 1: Visit https://github.com/Jhorgen/project3_
-#### _Step 2: Click the green "Clone or Download" button and copy the link._
-#### _Step 3: Open Git Bash and use the command: "git clone _____URL_____"_
+#### Step 1: Visit https://github.com/Jhorgen/project5
+#### Step 2: Click the green "Clone or Download" button and copy the link.
+#### Step 3: Open Git Bash and use the command: "git clone _____URL_____"
+#### _Alternatively_, visit https://jhorgen.github.io/Project5 for a preview of my project.
 
-#### _Alternatively, visit https://jhorgen.github.io/Project3 for a preview of my project._
 
+## _Description_
+This webpage will...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## Description
-_This webpage will convert any number into robot language. This page will demonstrate how Javascript and jQuery can be used to manipulate user input._
-
-## Specs
+## _Specs_
 
 | Behavior | Input | Output |
 | -------- | ----- | ------ |
-|Displays the day of a given date  |6/29/2019 |Saturday  |
+|*test* Displays the day of a given date  |6/29/2019 |Saturday  |
+|Outputs age based on inputted date | 5/9/1992 | 27 |
 
 
-### Languages used
-* HTML
-* Javascript
-* jQuery
+### _Languages, frameworks, libraries, etc!_
+
+* _HTML & CSS_
+* _Bootstrap_
+* _Javascript_
+* _jQuery_
+
+* _Webpack_
+* _Karma_
 
 #### License
-
-Open source (c) 2019 _**Josh Horgen**_
+_Open source (c) 2019 **Josh Horgen**_
