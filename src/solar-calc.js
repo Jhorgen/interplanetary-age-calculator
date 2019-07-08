@@ -13,13 +13,8 @@ export class CalculateAge {
     const todayDate = new Date();
     const userDate = new Date(this.complete);
     let userAge = todayDate.getFullYear() - userDate.getFullYear();
-    const getMonth = todayDate.getMonth() - userDate.getMonth();
-    if (getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate())) {
-userAge--;
-
-    }
     return userAge;
-  }
+  };
 
 
   calculatePlanet() {

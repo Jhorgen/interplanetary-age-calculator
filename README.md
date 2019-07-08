@@ -10,7 +10,7 @@ By _Josh Horgen, 2019_
 
 
 ## _Description_
-This webpage will...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This webpage will use your birthday to determine your age and life expectancy on other planets.
 
 ## _Specs_
 
@@ -19,7 +19,7 @@ This webpage will...Lorem ipsum dolor sit amet, consectetur adipisicing elit, se
 |*test* Displays the day of a given date  |6/29/2019 |Saturday  |
 |Returns age based on given date | 5/9/1992 | 27 |
 |Returns age in "Mercury" years| 5/9/1992 |112|
-|
+|Returns life expectancy/remaining years to live on selected planet | 5/9/1992 | 262|
 
 ### _Languages, frameworks, libraries, etc!_
 
