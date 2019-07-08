@@ -16,7 +16,7 @@ $(document).ready(function(){
     // console.log(planet);
     const complete = month + '/' + day + '/' + year
     const result = new CalculateAge(complete, planet);
-    console.log(result.calculatePlanet());
+    console.log(result.calculateLife());
     $('.output').text(result.calculatePlanet());
   });
 });

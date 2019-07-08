@@ -41,4 +41,14 @@ export class CalculateAge {
     }
 
   }
+
+  calculateLife() {
+    let userAge = this.returnResult();
+    let lifeExpectancy = this.calculatePlanet();
+
+    for(var i = 85; i > userAge; i++)
+    console.log(i);
+
+  }
+
 }
