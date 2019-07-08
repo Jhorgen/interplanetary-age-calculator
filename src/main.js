@@ -4,7 +4,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-const result = new CalculateAge();
 
 $(document).ready(function(){
   $('#formOne').submit(function(){
@@ -13,10 +12,14 @@ $(document).ready(function(){
     const day = $('#dayInput').val();
     const year = $('#yearInput').val();
     let planet = $( "#selectPlanet option:selected" ).val();
-    // console.log(planet);
     const complete = month + '/' + day + '/' + year
     const result = new CalculateAge(complete, planet);
-    console.log(result.calculateLife());
-    $('.output').text(result.calculatePlanet());
+
+    $('.output').text(Math.round(result.calculatePlanet())+ ' ' + 'years old!');
+
+    $('#lifeExpectancy').click(function(){
+      $('.lifeOutput').text(Math.round(result.calculateLifeExpectancy()) + ' ' + 'years left to live.');
+
+    });
   });
 });

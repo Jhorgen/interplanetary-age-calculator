@@ -10,18 +10,12 @@ export class CalculateAge {
 
 
   returnResult() {
-    console.log(userAge);
     const todayDate = new Date();
-    console.log(todayDate);
     const userDate = new Date(this.complete);
-    console.log(userDate);
     let userAge = todayDate.getFullYear() - userDate.getFullYear();
     const getMonth = todayDate.getMonth() - userDate.getMonth();
-    if (getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate()))
-    {
-
-      userAge--;
-      console.log(userAge);
+    if (getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate())) {
+userAge--;
 
     }
     return userAge;
@@ -39,16 +33,19 @@ export class CalculateAge {
     } else if (this.planet === "4") {
       return calculatedAge / this.jupiter;
     }
-
   }
 
-  calculateLife() {
+  calculateLifeExpectancy() {
     let userAge = this.returnResult();
-    let lifeExpectancy = this.calculatePlanet();
-
-    for(var i = 85; i > userAge; i++)
-    console.log(i);
-
+    let newAge = 90 - userAge;
+    if (this.planet === "1") {
+      return newAge / this.mercury;
+    } else if (this.planet === "2") {
+      return newAge / this.venus;
+    } else if (this.planet === "3") {
+      return newAge / this.mars;
+    } else if (this.planet === "4") {
+      return newAge / this.jupiter;
+    }
   }
-
 }

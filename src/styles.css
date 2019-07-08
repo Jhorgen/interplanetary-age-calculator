@@ -10,3 +10,8 @@ h1 {
 h3 {
   text-align: center;
 }
+
+.buttonSpan {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
