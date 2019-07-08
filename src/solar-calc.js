@@ -10,6 +10,7 @@ export class CalculateAge {
 
 
   returnResult() {
+    console.log(userAge);
     const todayDate = new Date();
     console.log(todayDate);
     const userDate = new Date(this.complete);
@@ -18,20 +19,25 @@ export class CalculateAge {
     const getMonth = todayDate.getMonth() - userDate.getMonth();
     if (getMonth < 0 || (getMonth === 0 && todayDate.getDate() < userDate.getDate()))
     {
+
       userAge--;
-      console.log(userAge)
+      console.log(userAge);
 
     }
-    return userAge
+    return userAge;
   }
 
+
   calculatePlanet() {
-    let planetAge = new CalculateAge();
-    console.log(planetAge);
-    if (planetAge.planet === "undefined") {
-      console.log("hello");
-    } else {
-      console.log("no");
+    let calculatedAge = this.returnResult();
+    if (this.planet === "1") {
+      return calculatedAge / this.mercury
+    } else if (this.planet === "2") {
+      return calculatedAge / this.venus;
+    } else if (this.planet === "3") {
+      return calculatedAge / this.mars;
+    } else if (this.planet === "4") {
+      return calculatedAge / this.jupiter;
     }
 
   }
