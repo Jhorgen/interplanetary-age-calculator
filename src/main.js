@@ -10,7 +10,6 @@ $(document).ready(function(){
     event.preventDefault();
 
     $('.lifeOutput').text(' ');
-
     const month = $('#monthInput').val();
     const day = $('#dayInput').val();
     const year = $('#yearInput').val();
